@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Aseel</title>
+  <meta name="description" content="All projects by Aseel — AI tools, web apps, APIs, and more.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){var s=localStorage.getItem('theme');var d=s==='dark'||(!s&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');})();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-shell">
+    <div class="col header-col">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Shaikh Aseel</a>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link active">Projects<span class="dot-active"></span></a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <div class="nav-more">
+            <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">More
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-more__menu">
+              <a href="favourites.html">Favourites<small>Tools, sites, movies &amp; more</small></a>
+              <a href="movies.html">Movies &amp; Characters<small>Favourite cinema &amp; people</small></a>
+              <a href="ides.html">IDEs &amp; Tools<small>Editors, design &amp; dev stack</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <button class="cmd-btn cmd-open-btn" aria-label="Open command palette">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <kbd>⌘ K</kbd>
+          </button>
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><span id="iconMoon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span></button>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+<div class="row row--first">
+  <div class="col">
+    <div class="page-hero">
+      <a href="index.html" class="back">← HOME</a>
+      <h1>Projects</h1>
+      <p>A curated showcase of my projects and designs.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="project-grid projects-list pcard-list">
+
+        <article class="pcard" data-proj="carousel">
+          <div class="pcard-thumb pcard-thumb--blue">
+            <span class="ribbon">NEW</span>
+            <svg viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="176" fill="#0c1829"/>
+              <rect x="80" y="50" width="90" height="76" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1" opacity=".6"/>
+              <rect x="155" y="38" width="90" height="100" rx="6" fill="#1e4080" stroke="#60a5fa" stroke-width="1.5"/>
+              <rect x="230" y="50" width="90" height="76" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1" opacity=".6"/>
+              <text x="200" y="92" fill="#93c5fd" font-size="10" font-family="monospace" text-anchor="middle">â—€ SLIDE â–¶</text>
+            </svg>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title-row"><h3>AI Carousel System</h3><span class="live-dot"><i></i>Live</span></div>
+            <p class="pcard-desc">Accessible AI-driven carousel component and design system.</p>
+            <div class="tag-row"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">A11y</span></div>
+          </div>
+        </article>
+
+        <article class="pcard" data-proj="shareyou">
+          <div class="pcard-thumb pcard-thumb--teal">
+            <svg viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="176" fill="#051a14"/>
+              <rect x="120" y="48" width="160" height="80" rx="12" fill="#0f4f3a" stroke="#10b981" stroke-width="1"/>
+              <text x="200" y="145" fill="#6ee7b7" font-size="10" font-family="monospace" text-anchor="middle">SHAREYOU</text>
+            </svg>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title-row"><h3>ShareYou — Private Chat</h3><span class="live-dot"><i></i>Live</span></div>
+            <p class="pcard-desc">Private messaging with real-time delivery and a clean chat UI.</p>
+            <div class="tag-row"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">WebSockets</span></div>
+          </div>
+        </article>
+
+        <article class="pcard" data-proj="removeanything">
+          <div class="pcard-thumb pcard-thumb--dark">
+            <span class="coming-tag">v2 Coming Soon</span>
+            <svg viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="176" fill="#0f1117"/>
+              <circle cx="200" cy="88" r="55" fill="none" stroke="#60a5fa" stroke-width="1" opacity=".5"/>
+              <circle cx="200" cy="88" r="35" fill="#1e40af" opacity=".4"/>
+              <text x="200" y="93" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">AI ERASER</text>
+            </svg>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title-row"><h3>RemoveAnything.in</h3><span class="live-dot"><i></i>Live</span></div>
+            <p class="pcard-desc">AI-powered background &amp; object removal. 500+ images processed via Docker.</p>
+            <div class="tag-row"><span class="tag">Docker</span><span class="tag">Python</span><span class="tag">AI/ML</span><span class="tag">Flask</span></div>
+          </div>
+        </article>
+
+        <article class="pcard" data-proj="realestate">
+          <div class="pcard-thumb pcard-thumb--purple">
+            <svg viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="176" fill="#170d28"/>
+              <circle cx="200" cy="70" r="28" fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 3"/>
+              <text x="200" y="74" fill="#c4b5fd" font-size="10" font-family="monospace" text-anchor="middle">AI CALL</text>
+              <path d="M100 140 L140 100 L180 120 L220 90 L260 110 L300 80 L340 100 L340 140Z" fill="#7c3aed" opacity=".35"/>
+            </svg>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title-row"><h3>Real Estate AI</h3><span class="live-dot building"><i></i>Building</span></div>
+            <p class="pcard-desc">AI calling assistant for real estate — lead notes, property tracking &amp; CRM.</p>
+            <div class="tag-row"><span class="tag">Twilio</span><span class="tag">OpenAI</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+          </div>
+        </article>
+
+        <article class="pcard" data-proj="receiptapi">
+          <div class="pcard-thumb pcard-thumb--teal">
+            <svg viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="176" fill="#051a14"/>
+              <rect x="140" y="40" width="120" height="96" rx="5" fill="#0f4f3a" stroke="#10b981" stroke-width="1"/>
+              <text x="200" y="122" fill="#6ee7b7" font-size="9" font-family="monospace" text-anchor="middle">GET /receipt/:id</text>
+            </svg>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title-row"><h3>Receipt API</h3><span class="live-dot"><i></i>Live</span></div>
+            <p class="pcard-desc">Backend REST API for receipt processing, JWT auth, and CRUD operations.</p>
+            <div class="tag-row"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">JWT</span></div>
+          </div>
+        </article>
+
+        <article class="pcard" data-proj="python">
+          <div class="pcard-thumb pcard-thumb--dark">
+            <svg viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="176" fill="#0d1117"/>
+              <text x="200" y="93" fill="#3776AB" font-size="14" font-weight="bold" font-family="monospace" text-anchor="middle">PYTHON</text>
+            </svg>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-title-row"><h3>Python Learning</h3><span class="live-dot building"><i></i>Building</span></div>
+            <p class="pcard-desc">A dedicated repository for my daily Python learning, experiments, and fun projects.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">Learning</span><span class="tag">Daily</span></div>
+          </div>
+        </article>
+
+    </div>
+  </div>
+</div>
+
+<div class="row row--last">
+  <div class="col">
+    <footer class="site-footer">
+      <p>Designed &amp; Developed by <strong>Shaikh Aseel</strong> · © 2026</p>
+    </footer>
+  </div>
+</div>
+
+<div class="cmd-overlay" id="cmdOverlay">
+  <div class="cmd-box">
+    <div class="cmd-box-head"><div class="cmd-box-title">Navigation Menu</div><div class="cmd-box-sub">Quickly jump to sections or actions</div></div>
+    <div class="cmd-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input type="text" id="cmdSearch" placeholder="Search for actions”¦" autocomplete="off"></div>
+    <div class="cmd-scroll">
+      <div class="cmd-group-label">Sections</div>
+      <a href="experience.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Experience</span><span class="cmd-kbd">shift + E</span></a>
+      <a href="projects.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Projects</span><span class="cmd-kbd">shift + P</span></a>
+      <a href="favourites.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Blogs &amp; Favourites</span><span class="cmd-kbd">shift + B</span></a>
+      <a href="https://github.com/aseel012" target="_blank" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.2 9.2 7.7 10.7.6.1.8-.2.8-.6v-2.2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10 10 0 0 1 5.4 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.7-5.7 7.7-10.7C23.2 5.4 18.3.5 12 .5z"/></svg>Open Source</span><span class="cmd-kbd">shift + O</span></a>
+      <a href="ides.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Skills &amp; IDEs</span><span class="cmd-kbd">shift + S</span></a>
+      <div class="cmd-group-label">General</div>
+      <button class="cmd-item" data-action="copy-link"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Copy Link</span><span class="cmd-kbd">shift + C</span></button>
+      <div class="cmd-group-label">Theme</div>
+      <button class="cmd-item" data-action="light"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>Light Mode</span><span class="cmd-kbd">shift + T</span></button>
+      <button class="cmd-item" data-action="dark"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>Dark Mode</span><span class="cmd-kbd">shift + D</span></button>
+      <button class="cmd-item" data-action="sys"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>System</span><span class="cmd-kbd">shift + Y</span></button>
+    </div>
+    <div class="cmd-footer"><span>â†‘â†“ to navigate</span><span>â†µ to select</span><span>esc to close</span></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Shaikh Aseel</title>
+  <meta name="description" content="Experience and education of Shaikh Aseel — Product-Focused Software Developer.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .exp-item {
+      display:flex; gap:16px; padding:18px;
+      background:var(--bg-2); border:1px solid var(--border);
+      border-radius:var(--r-lg); transition:border-color .18s, transform .18s;
+    }
+    .exp-item:hover { border-color:var(--dot-strong); transform:translateY(-2px); }
+    .exp-dot { width:10px; height:10px; border-radius:50%; background:var(--text); margin-top:6px; flex-shrink:0; }
+    .exp-role { font-family:var(--font-serif); font-size:17px; font-weight:700; margin-bottom:2px; }
+    .exp-where { font-size:13.5px; font-weight:600; color:var(--muted); margin-bottom:2px; }
+    .exp-when { font-size:11.5px; color:var(--muted); margin-bottom:8px; }
+    .exp-desc { font-size:13.5px; color:var(--muted); line-height:1.55; }
+    .exp-tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:10px; }
+    .edu-item { padding:18px; background:var(--bg-2); border:1px solid var(--border); border-radius:var(--r-lg); margin-bottom:14px; }
+    .edu-item:last-child { margin-bottom:0; }
+    .edu-degree { font-family:var(--font-serif); font-size:17px; font-weight:700; }
+    .edu-school { font-size:14px; font-weight:500; color:var(--muted); margin-bottom:4px; }
+    .edu-year   { font-size:12px; color:var(--muted); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-shell">
+    <div class="col header-col">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Shaikh Aseel</a>
+        <nav class="nav-desktop">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="experience.html" class="nav-link active">Experience<span class="dot-active"></span></a>
+          <div class="nav-more">
+            <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">More
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-more__menu">
+              <a href="favourites.html">Favourites<small>Tools, sites, movies &amp; more</small></a>
+              <a href="movies.html">Movies &amp; Characters<small>Favourite cinema &amp; people</small></a>
+              <a href="ides.html">IDEs &amp; Tools<small>Editors, design &amp; dev stack</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <button class="cmd-btn cmd-open-btn" aria-label="Open command palette"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><kbd>⌘ K</kbd></button>
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><span id="iconMoon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span></button>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+<div class="row row--first">
+  <div class="col">
+    <div class="page-hero">
+      <a href="index.html" class="back">← HOME</a>
+      <h1>Experience</h1>
+      <p>My work history, open source contributions, and education.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="s-header-row">
+      <h2 class="s-title">Work Experience</h2>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="exp-list-wrap">
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div>
+            <div class="exp-role">Freelance Product Developer</div>
+            <div class="exp-where">Self-Employed · Remote</div>
+            <div class="exp-when">May 2026 — Present</div>
+            <p class="exp-desc">Got 2 projects till now web based: one Shopify and one e-commerce site which is under construction.</p>
+            <div class="exp-tags"><span class="tag">Shopify</span><span class="tag">Web Development</span><span class="tag">E-commerce</span></div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div>
+            <div class="exp-role">Dream Webebies</div>
+            <div class="exp-where">Remote</div>
+            <div class="exp-when">Jun 2024 — Nov 2024</div>
+            <p class="exp-desc">Learned Flutter, Backend development, and AWS cloud deployment.</p>
+            <div class="exp-tags"><span class="tag">Flutter</span><span class="tag">Backend</span><span class="tag">AWS</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row--last">
+  <div class="col">
+    <footer class="site-footer"><p>Designed &amp; Developed by <strong>Shaikh Aseel</strong> · © 2026</p></footer>
+  </div>
+</div>
+
+<div class="cmd-overlay" id="cmdOverlay">
+  <div class="cmd-box">
+    <div class="cmd-box-head"><div class="cmd-box-title">Navigation Menu</div><div class="cmd-box-sub">Quickly jump to sections or actions</div></div>
+    <div class="cmd-search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><input type="text" id="cmdSearch" placeholder="Search for actions”¦" autocomplete="off"></div>
+    <div class="cmd-scroll">
+      <div class="cmd-group-label">Sections</div>
+      <a href="experience.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>Experience</span><span class="cmd-kbd">shift + E</span></a>
+      <a href="projects.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Projects</span><span class="cmd-kbd">shift + P</span></a>
+      <a href="favourites.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Blogs &amp; Favourites</span><span class="cmd-kbd">shift + B</span></a>
+      <a href="https://github.com/aseel012" target="_blank" rel="noopener" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.2 9.2 7.7 10.7.6.1.8-.2.8-.6v-2.2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10 10 0 0 1 5.4 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.7-5.7 7.7-10.7C23.2 5.4 18.3.5 12 .5z"/></svg>Open Source</span><span class="cmd-kbd">shift + O</span></a>
+      <a href="ides.html" class="cmd-item"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>IDEs &amp; Tools</span><span class="cmd-kbd">shift + S</span></a>
+      <div class="cmd-group-label">General</div>
+      <button class="cmd-item" data-action="copy-link"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Copy Link</span><span class="cmd-kbd">shift + C</span></button>
+      <div class="cmd-group-label">Theme</div>
+      <button class="cmd-item" data-action="light"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>Light Mode</span><span class="cmd-kbd">shift + T</span></button>
+      <button class="cmd-item" data-action="dark"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>Dark Mode</span><span class="cmd-kbd">shift + D</span></button>
+      <button class="cmd-item" data-action="sys"><span class="cmd-item-left"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>System</span><span class="cmd-kbd">shift + Y</span></button>
+    </div>
+    <div class="cmd-footer"><span>â†‘â†“ to navigate</span><span>â†µ to select</span><span>esc to close</span></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
+

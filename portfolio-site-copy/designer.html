@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designer — Aseel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="edge-line edge-line--top"></div>
+
+  <div class="page">
+
+    <header class="site-header">
+      <a href="index.html" class="logo">Aseel</a>
+
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <div class="nav-more">
+          <button class="nav-link nav-more__btn" id="moreBtn" aria-haspopup="true" aria-expanded="false">
+            More
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-more__menu" id="moreMenu">
+            <a href="favourites.html">Favourites<small>Tools, sites, movies &amp; more</small></a>
+            <a href="designer.html" style="color:var(--text);background:var(--link-hover-bg);">Designer<small>Pinterest boards &amp; inspiration</small></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" id="navMobile">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <div class="nav-mobile__group">More</div>
+        <a href="favourites.html">Favourites</a>
+        <a href="designer.html">Designer</a>
+      </nav>
+    </header>
+
+    <div class="page-hero" style="padding-bottom:0;">
+      <a href="index.html" class="back-link">← Back home</a>
+    </div>
+
+    <!-- ============ PINTEREST-STYLE PROFILE ============ -->
+    <section class="designer-profile">
+      <div class="designer-avatar">D</div>
+      <h1>dynamicenzo</h1>
+      <p class="handle">Pinterest · Design inspiration board</p>
+      <a href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" class="designer-follow">
+        Follow on Pinterest
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ PIN MASONRY ============ -->
+    <div class="pin-masonry">
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#e8577a"/><rect y="260" width="300" height="140" fill="#c8395c"/></svg>
+        <span class="pin-label">Color palette</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="260" fill="#f2c94c"/><circle cx="220" cy="70" r="60" fill="#fff2c2"/></svg>
+        <span class="pin-label">Minimal layout</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="340" fill="#4f6ef7"/><path d="M0 240 L100 180 L200 220 L300 160 L300 340 L0 340Z" fill="#3752c9"/></svg>
+        <span class="pin-label">UI moodboard</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="200" fill="#2f9e5c"/></svg>
+        <span class="pin-label">Typography</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="380" fill="#1e1f26"/><circle cx="150" cy="150" r="90" fill="#3a3c4a"/></svg>
+        <span class="pin-label">Dark UI</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="240" fill="#e8b4bc"/></svg>
+        <span class="pin-label">Soft gradients</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="300" fill="#7c93ff"/><rect x="40" y="40" width="220" height="220" rx="24" fill="#5a72e0"/></svg>
+        <span class="pin-label">Card design</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="420" fill="#d69a2d"/><rect y="0" width="300" height="140" fill="#f2c94c"/></svg>
+        <span class="pin-label">Landing page</span>
+      </a>
+
+      <a class="pin" href="https://pinterest.com/dynamicenzo" target="_blank" rel="noopener" style="display:block;">
+        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="220" fill="#3a2b6a"/></svg>
+        <span class="pin-label">Icon set</span>
+      </a>
+
+    </div>
+
+    <footer class="site-footer">
+      <p>Designed &amp; developed by Aseel</p>
+      <p>© 2026 All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <div class="edge-line edge-line--bottom"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

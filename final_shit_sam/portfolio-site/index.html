@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sam — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- full-width hairline that runs across the entire viewport -->
+  <div class="edge-line edge-line--top"></div>
+
+  <div class="page">
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+      <a href="#" class="logo">Sam</a>
+
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link is-active">Home<span class="dot"></span></a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <div class="nav-more">
+          <button class="nav-link nav-more__btn" id="moreBtn" aria-haspopup="true" aria-expanded="false">
+            More
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-more__menu" id="moreMenu">
+            <a href="#books">Books</a>
+            <a href="#favourites">Favourites</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+
+        <!-- mobile hamburger / close -->
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- mobile dropdown -->
+      <nav class="nav-mobile" id="navMobile">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#books">Books</a>
+        <a href="#favourites">Favourites</a>
+      </nav>
+    </header>
+
+    <!-- ============ BANNER ============ -->
+    <section class="banner">
+      <svg viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="banner-art">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#cfd8d2"/>
+            <stop offset="1" stop-color="#aab8b0"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="360" fill="url(#sky)"/>
+        <g opacity="0.55" fill="#5c6f63">
+          <ellipse cx="140" cy="90" rx="160" ry="90"/>
+          <ellipse cx="1060" cy="80" rx="180" ry="100"/>
+          <ellipse cx="600" cy="40" rx="220" ry="70"/>
+        </g>
+        <path d="M0 260 L120 150 L260 230 L420 120 L560 220 L700 130 L860 240 L1000 140 L1200 230 L1200 360 L0 360 Z" fill="#495a4f"/>
+        <path d="M470 120 L560 220 L700 130 L560 90 Z" fill="#8f9c8f" opacity="0.9"/>
+        <path d="M470 120 L560 220 L520 230 L500 150 Z" fill="#eef2ee" opacity="0.9"/>
+        <path d="M700 130 L860 240 L800 250 L760 170 Z" fill="#eef2ee" opacity="0.75"/>
+        <g fill="#3b4a41">
+          <circle cx="70" cy="300" r="34"/>
+          <circle cx="140" cy="290" r="26"/>
+          <circle cx="1100" cy="300" r="30"/>
+          <circle cx="1150" cy="280" r="22"/>
+        </g>
+      </svg>
+    </section>
+
+    <!-- ============ PROFILE ============ -->
+    <section class="profile" id="home">
+      <div class="profile-avatar">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" fill="var(--avatar-bg)"/>
+          <path d="M20 92c2-22 16-30 30-30s28 8 30 30" fill="#111"/>
+          <circle cx="50" cy="46" r="22" fill="#111"/>
+          <circle cx="41" cy="46" r="3.4" fill="#fff"/>
+          <circle cx="59" cy="46" r="3.4" fill="#fff"/>
+          <path d="M28 30c4-14 40-16 44 0-6-4-38-4-44 0z" fill="#111"/>
+          <path d="M30 22c-6 2-10 10-8 18-4-10-2-20 8-18z" fill="#111"/>
+        </svg>
+      </div>
+
+      <div class="profile-info">
+        <h1 class="profile-name">Samiran De</h1>
+        <p class="profile-role">Frontend Developer</p>
+        <p class="profile-location">19, West Bengal, IND</p>
+      </div>
+
+      <div class="profile-views">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>7681</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about">
+      <h2 class="section-title">About</h2>
+      <ul class="about-list">
+        <li><strong>Design Engineer</strong> passionate about crafting digital products where thoughtful design meets clean, scalable code.</li>
+        <li>I design and develop modern interfaces with <strong>React, Tailwind, Motion</strong> focusing on usability, performance, and delightful interactions.</li>
+        <li>Currently a 2nd-year B.Tech CSE student, I enjoy transforming ideas into polished products, exploring new technologies, refining details, and creating intuitive and memorable experiences.</li>
+      </ul>
+    </section>
+
+    <div class="seam"></div>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-row">
+        <a href="#" class="pill-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.2 9.2 7.7 10.7.6.1.8-.2.8-.6v-2.2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10 10 0 0 1 5.4 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.7-5.7 7.7-10.7C23.2 5.4 18.3.5 12 .5z"/></svg>
+          <span>GitHub</span>
+          <svg class="ext" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="#" class="pill-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.5v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4z"/></svg>
+          <span>LinkedIn</span>
+          <svg class="ext" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="#" class="pill-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.2 8.3L23.3 22h-6.6l-5.2-6.8L5.5 22H2.4l7.7-8.9L1.7 2h6.8l4.7 6.2L18.9 2zm-1.1 18h1.8L7.3 3.9H5.4l12.4 16.1z"/></svg>
+          <span>Twitter</span>
+          <svg class="ext" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="#" class="pill-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 5h18v14H3z"/><path d="M3 5l9 8 9-8"/></svg>
+          <span>Mail</span>
+          <svg class="ext" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="#" class="pill-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.4 11.1l-8.5 8.5a4.9 4.9 0 0 1-7-7l8.5-8.5a3.3 3.3 0 0 1 4.7 4.7l-8.4 8.4a1.6 1.6 0 0 1-2.3-2.3l7.8-7.8"/></svg>
+          <span>Resume</span>
+          <svg class="ext" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="seam"></div>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-head">
+        <h2 class="section-title">Projects</h2>
+        <a href="#" class="view-all">View all
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-thumb project-thumb--green">
+            <span class="ribbon">500+ active users</span>
+            <svg viewBox="0 0 400 220" class="thumb-art" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="220" fill="#eaf7d8"/>
+              <path d="M0 170 L60 130 L120 160 L200 110 L280 150 L400 100 L400 220 L0 220 Z" fill="#3d7a3f" opacity="0.5"/>
+              <path d="M0 190 L80 160 L160 185 L240 150 L400 175 L400 220 L0 220 Z" fill="#2f5f34" opacity="0.6"/>
+            </svg>
+            <div class="thumb-window">
+              <div class="thumb-window__bar"><span></span><span></span><span></span></div>
+              <p>A workspace built for<br>focused work.</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Timmo</h3>
+              <span class="live"><i></i>Live</span>
+            </div>
+            <p>Timer with leaderboard and analytics — track every session with a clean, minimal, distraction-free interface.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb project-thumb--pink">
+            <svg viewBox="0 0 400 220" class="thumb-art" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f7b3c2"/>
+                  <stop offset="1" stop-color="#e8577a"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="220" fill="url(#pinkGrad)"/>
+            </svg>
+            <div class="thumb-panel">
+              <div class="thumb-panel__row"><span>Title</span><i></i></div>
+              <div class="thumb-panel__row"><span>Text Style</span><i></i></div>
+              <div class="thumb-panel__swatches"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="thumb-photo"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Retro Photo Card</h3>
+              <span class="live"><i></i>Live</span>
+            </div>
+            <p>Create nostalgic photo cards in seconds — pick a style, upload a photo, and download instantly.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="seam"></div>
+
+    <!-- ============ TECH STACK ============ -->
+    <section class="tech-stack" id="tech">
+      <div class="section-head">
+        <h2 class="section-title">Tech Stack <span class="hint">( hover to play )</span></h2>
+        <div class="tab-row">
+          <button class="tab is-active" data-filter="all">All</button>
+          <button class="tab" data-filter="frontend">Frontend</button>
+          <button class="tab" data-filter="backend">Backend</button>
+          <button class="tab" data-filter="design">Design</button>
+          <button class="tab" data-filter="tools">Tools</button>
+        </div>
+      </div>
+
+      <div class="tech-grid">
+        <span class="tech-pill" data-cat="frontend">JavaScript</span>
+        <span class="tech-pill" data-cat="frontend">TypeScript</span>
+        <span class="tech-pill" data-cat="frontend">React</span>
+        <span class="tech-pill" data-cat="frontend">Next.js</span>
+        <span class="tech-pill" data-cat="frontend">Tailwind CSS</span>
+        <span class="tech-pill" data-cat="frontend">Framer Motion</span>
+        <span class="tech-pill" data-cat="backend">Node.js</span>
+        <span class="tech-pill" data-cat="backend">Express.js</span>
+        <span class="tech-pill" data-cat="backend">MongoDB</span>
+        <span class="tech-pill" data-cat="backend">JWT</span>
+        <span class="tech-pill" data-cat="tools">Git</span>
+        <span class="tech-pill" data-cat="tools">GitHub</span>
+        <span class="tech-pill" data-cat="tools">Vercel</span>
+        <span class="tech-pill" data-cat="design">Figma</span>
+        <span class="tech-pill" data-cat="tools">Postman</span>
+        <span class="tech-pill" data-cat="tools">Axios</span>
+      </div>
+    </section>
+
+    <div class="seam"></div>
+
+    <!-- ============ GITHUB ACTIVITY ============ -->
+    <section class="github-activity" id="github">
+      <h2 class="section-title">GitHub Activity</h2>
+      <div class="heatmap-wrap">
+        <div class="heatmap-months" id="heatmapMonths"></div>
+        <div class="heatmap-grid" id="heatmapGrid"></div>
+      </div>
+      <div class="heatmap-legend">
+        <span id="contribCount">— contributions in the last year</span>
+        <div class="legend-scale">
+          <span>Less</span>
+          <i class="lvl-0"></i><i class="lvl-1"></i><i class="lvl-2"></i><i class="lvl-3"></i><i class="lvl-4"></i>
+          <span>More</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="seam"></div>
+
+    <!-- ============ HIGHLIGHTS ============ -->
+    <section class="highlights" id="highlights">
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlight-list">
+        <li>
+          <span class="highlight-dot"></span>
+          <div>
+            <h3>Built &amp; shipped Timmo</h3>
+            <p>A focus-timer workspace that crossed 500+ active users within the first few months.</p>
+          </div>
+        </li>
+        <li>
+          <span class="highlight-dot"></span>
+          <div>
+            <h3>579 contributions this year</h3>
+            <p>Consistent daily coding streaks across personal projects and open-source contributions.</p>
+          </div>
+        </li>
+        <li>
+          <span class="highlight-dot"></span>
+          <div>
+            <h3>Design + code, end to end</h3>
+            <p>Comfortable owning a product from Figma wireframe to a deployed, polished interface.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <p>Designed &amp; developed by Sam</p>
+      <p>© 2026 All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <div class="edge-line edge-line--bottom"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

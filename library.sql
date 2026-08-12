@@ -16,10 +16,6 @@ CREATE TABLE category (
 );
 
 
--- =========================================================
--- 2. PUBLISHER
--- =========================================================
-
 CREATE TABLE publisher (
     publisher_id INT PRIMARY KEY,
     publisher_name VARCHAR(60) NOT NULL,

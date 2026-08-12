@@ -73,10 +73,3 @@ The `book_author` table acts as a **junction table** to represent the many-to-ma
 ## 🔐 Data Integrity & Validation
 
 The database includes multiple SQL constraints to prevent invalid data.
-
-### Primary Keys
-
-Every major entity has a unique primary key:
-
-```sql
-PRIMARY KEY

@@ -1,6 +1,3 @@
--- =========================================================
--- DELETE OLD DATABASE AND CREATE A CLEAN ONE
--- =========================================================
 
 DROP DATABASE IF EXISTS library;
 

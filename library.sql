@@ -5,7 +5,6 @@ CREATE DATABASE library;
 
 USE library;
 
-
 CREATE TABLE category (
     category_id INT PRIMARY KEY,
     category_name VARCHAR(40) NOT NULL UNIQUE,

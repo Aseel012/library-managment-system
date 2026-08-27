@@ -55,10 +55,6 @@ CREATE TABLE location (
 );
 
 
--- =========================================================
--- 4. AUTHOR
--- =========================================================
-
 CREATE TABLE author (
     author_id INT PRIMARY KEY,
     first_name VARCHAR(20) NOT NULL,
@@ -74,10 +70,6 @@ CREATE TABLE author (
 );
 
 
--- =========================================================
--- 5. LIBRARY STAFF
--- =========================================================
-
 CREATE TABLE library_staff (
     issued_by_id INT PRIMARY KEY,
     staff_name VARCHAR(40) NOT NULL,
@@ -91,11 +83,6 @@ CREATE TABLE library_staff (
         staff_designation REGEXP '^[A-Za-z][A-Za-z -]{1,29}$'
     )
 );
-
-
--- =========================================================
--- 6. MEMBER STATUS
--- =========================================================
 
 CREATE TABLE member_status (
     active_status_id INT PRIMARY KEY,
@@ -117,11 +104,6 @@ CREATE TABLE member_status (
         OR membership_end_date >= membership_start_date
     )
 );
-
-
--- =========================================================
--- 7. MEMBER
--- =========================================================
 
 CREATE TABLE member (
     member_id INT PRIMARY KEY,

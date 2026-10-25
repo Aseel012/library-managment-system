@@ -67,7 +67,6 @@ CREATE TABLE author (
     )
 );
 
-
 CREATE TABLE library_staff (
     issued_by_id INT PRIMARY KEY,
     staff_name VARCHAR(40) NOT NULL,
